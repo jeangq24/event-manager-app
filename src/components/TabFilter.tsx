@@ -1,5 +1,3 @@
-import * as React from "react"
-import { type DropdownMenuCheckboxItemProps } from "@radix-ui/react-dropdown-menu"
 import { format } from "date-fns"
 import { Calendar } from "../components/ui/calendar";
 import { Popover, PopoverContent, PopoverTrigger, } from "../components/ui/popover"
@@ -14,8 +12,6 @@ import {
     DropdownMenuTrigger,
 } from "../components/ui/dropdown-menu"
 import { useEvents } from "../context/EventContext";
-
-type Checked = DropdownMenuCheckboxItemProps["checked"]
 
 export default function TabFilter() {
     const { selectedCategories, setSelectedCategories, selectedDate, setSelectedDate } = useEvents();
