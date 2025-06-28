@@ -1,8 +1,12 @@
+import { Route, Routes } from "react-router-dom"
+import Home from "./pages/Home"
+import EventDetail from "./components/EventDetails"
 function App() {
   return (
-    <>
-      <h1 className="text-3xl font-bold">Hi</h1>
-    </>
+    <Routes>
+      <Route path="/" element={<Home/>}/>
+      <Route path="/eventos/:id" element={<EventDetail/>}/>
+    </Routes>
   )
 }
 
